@@ -4,19 +4,19 @@ Font Awesome Icons - For Hamburger OPEN and CLOSE Icon;
 ***/
 
 @import 'https://fonts.google.com/specimen/Open+Sans';
-
-
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;  /* Font */
-    -webkit-tap-highlight-color: transparent;  /* To prevent highlighting indication onclick of items */
-  }
+    font-family: 'Open Sans', sans-serif;
+    /* Font */
+    -webkit-tap-highlight-color: transparent;
+    /* To prevent highlighting indication onclick of items */
+}
 
 body {
     width: 100%;
-    overflow-y: scroll; /* To prevent page jumping*/
-   
+    overflow-y: scroll;
+    /* To prevent page jumping*/
 }
 
 /*Navbar Part Starts here*/
@@ -56,7 +56,6 @@ body {
     font-size: 30px;
     cursor: pointer;
     display: none;
-   
 }
 
 .hamburgerBtnShow {
@@ -67,11 +66,8 @@ body {
     line-height: 100px;
 }
 
-.hamburgerBtnShow:hover, 
-.hamburgerBtnClose:hover {
+.hamburgerBtnShow:hover, .hamburgerBtnClose:hover {
     transform: rotate(90deg);
-    
-   
 }
 
 /* Navbar Part Ends Here*/
@@ -96,7 +92,6 @@ p {
     text-align: center;
     display: block;
 }
-
 
 /* Main Content Starts Here */
 
@@ -141,8 +136,8 @@ p {
 
 /* Container with media query strats here*/
 
-
 /* Applies when the sceen size less then 786px */
+
 @media (max-width: 800px) {
     .container {
         padding-right: 10px;
@@ -152,8 +147,10 @@ p {
         margin-left: auto;
     }
 }
+
 /* Applies when the sceen size less then 992px*/
-@media screen and (min-width : 799px) and (max-width : 1023px) {
+
+@media screen and (min-width: 799px) and (max-width: 1023px) {
     .container {
         padding-right: 10px;
         padding-left: 10px;
@@ -162,7 +159,9 @@ p {
         margin-left: 50px;
     }
 }
+
 /* Applies when the sceen size less then 1200px*/
+
 @media (min-width: 1024px) {
     .container {
         padding: 10px 80px 20px 80px;
@@ -175,11 +174,8 @@ p {
 
 /* Container with media query Ends here*/
 
-
-@media screen and (min-width : 799px) and (max-width : 1023px)
-{
+@media screen and (min-width: 799px) and (max-width: 1023px) {
     .Banner .cardContent {
-
         left: 56%;
         right: 12%;
         color: #ffffff;
@@ -219,5 +215,78 @@ p {
         font-size: 16px;
         padding: 8px 4px;
         letter-spacing: 0.5px;
+    }
+}
+
+/* Display on mobile view */
+
+@media (max-width:800px) {
+    .hamburgerBtnShow, .hamburgerBtnClose {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(29, 29, 29);
+        right: -100%;
+        top: 0;
+        text-align: left;
+        padding: 80px 0px;
+        line-height: normal;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        /* Animation on opening and closing sidenav*/
+        z-index: 4;
+    }
+    .menu a {
+        display: block;
+        padding: 20px 40px;
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-weight: 100;
+        font-size: 25px;
+    }
+    .hamburgerBtnClose {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+    }
+    .navHeader {
+        margin: 0px 20px;
+    }
+    .Banner .cardContent {
+        color: #000000;
+        background-color: #ffffff00;
+        bottom: auto;
+        left: 2px;
+        right: 2px;
+        padding: 10px 2px;
+        margin: 0px 20px;
+        max-width: 100%;
+        height: auto;
+        border-radius: none;
+        box-shadow: none;
+        text-align: left;
+        letter-spacing: 0.5px;
+        z-index: 2;
+        position: none;
+        transform: none;
+    }
+    .cardContent a {
+        text-decoration: none;
+        color: #030303;
+    }
+    .BannerDiv {
+        margin: 0px 20px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+    }
+    .fa-bars:before {
+        color: black;
+        /* Hamburger Icon color black */
+        margin: 0px 0px 50px 0px;
+        z-index: 100;
     }
 }
