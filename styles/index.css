@@ -1,0 +1,77 @@
+/***
+Font: Google Fonts - Open Sans](https://fonts.google.com/specimen/Open+Sans);
+Font Awesome Icons - For Hamburger OPEN and CLOSE Icon;
+***/
+
+@import 'https://fonts.google.com/specimen/Open+Sans';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;  /* Font */
+    -webkit-tap-highlight-color: transparent;  /* To prevent highlighting indication onclick of items */
+  }
+
+body {
+    width: 100%;
+    overflow-y: scroll; /* To prevent page jumping*/
+   
+}
+
+/*Navbar Part Starts here*/
+
+.navHeader {
+    margin-top: -5px;
+    margin-bottom: -3px;
+    height: 105px;
+    padding: 0px 10px;
+    color: #fff;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+    line-height: 100px;
+    float: left;
+}
+
+.menu {
+    float: right;
+    line-height: 100px;
+    padding: 0px 10px;
+}
+
+.menu a {
+    letter-spacing: 0.5px;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: 0.4s;
+}
+
+.hamburgerBtnShow, .hamburgerBtnClose {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+   
+}
+
+.hamburgerBtnShow {
+    float: right;
+}
+
+.hamburgerBtnShow i {
+    line-height: 100px;
+}
+
+.hamburgerBtnShow:hover, 
+.hamburgerBtnClose:hover {
+    transform: rotate(90deg);
+    
+   
+}
+
+/* Navbar Part Ends Here*/
