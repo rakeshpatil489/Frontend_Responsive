@@ -75,3 +75,66 @@ body {
 }
 
 /* Navbar Part Ends Here*/
+
+h2 {
+    font-weight: 200;
+    font-size: 32px;
+    padding: 15px 10px;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-weight: 100;
+    font-size: 20px;
+    padding: 15px 10px;
+    letter-spacing: 0.5px;
+}
+
+.Banner {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+}
+
+
+/* Main Content Starts Here */
+
+.BannerDiv {
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.BannerImage {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto -14%;
+    z-index: -1;
+}
+
+.Banner .cardContent {
+    left: 54%;
+    right: 12%;
+    color: #ffffff;
+    padding: 20px 15px;
+    max-width: 430px;
+    height: auto;
+    background-color: #428fc2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    position: absolute;
+    transform: translate(-2%, -72%);
+    -ms-transform: translate(-2%, -72%);
+}
+
+.cardContent a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Main Content Ends Here */
