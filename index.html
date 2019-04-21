@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="de-DE">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
-		<title>Clear Canvas - Frontend Test</title>
-		
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
-		
-		<meta name="format-detection" content="telephone=no">
-		
-		<link rel="stylesheet" href="styles/screen.css" type="text/css" media="all" />
-	</head>
-	<body>
-		<header class="SiteHeader">
-			<a href="/" class="Logo"><img src="assets/images/logo.svg"/></a>
 
-			<nav class="Navigation">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+	<title>Clear Canvas - Frontend Test</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="format-detection" content="telephone=no">
+
+	<!--This is a link to CSS file -->
+	<link rel="stylesheet" href="styles/index.css" type="text/css" media="all" />
+
+	<!--This is a link to fontawesome ICONS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+</head>
+
+<body>
+
+
+	<!--Header Start-->
+	<header>
+		<div class="navHeader">
+
+			<!--LOGO-->
+			<div class="logo">
+				<img src="assets/images/logo.svg" />
+			</div>
+
+			<!--Hamburger Open Icon-->
+			<label class="hamburgerBtnShow">
+				<i class="fas fa-bars"></i>
+			</label>
+
+			<!--Menu Content-->
+			<ul class="menu">
 				<a href="#">Über uns</a>
 				<a href="#">Neues</a>
 				<a href="#">Karriere</a>
 				<a href="#">Kontakt</a>
-			</nav>
-			
-			<div class="MenuWrapper">
-				<a class="Menu"><span class="Hamburger"></span></a>
-				<div class="Menu-overlay">
-					<nav class="Menu-navigation">
-						<a href="#">Über uns</a>
-						<a href="#">Neues</a>
-						<a href="#">Karriere</a>
-						<a href="#">Kontakt</a>
-						<a class="Menu-close">schließen</a>
-					</nav>
-				</div>
+
+				<!--Hamburger Close Icon-->
+				<label class="hamburgerBtnClose">
+					<i class="fas fa-times"></i>
+				</label>
+
+			</ul>
+
+		</div>
+
+	</header>
+	<!--Header End-->
+
+	<!--Main content start-->
+	<main>
+		<div class="Banner">
+
+			<!--Main Image (Bird Image) -->
+			<div class="BannerDiv">
+				<img class="BannerImage" src="assets/images/bird.jpg" alt="Bird" />
 			</div>
-		</header>
-		<main>
-			<div class="Banner">
-				<img class="Banner-image" src="assets/images/bird.jpg" alt="Bird" />
+			
+			<!--Card Here-->
+			<div class="cardContent">
 				<a href="#" class="Banner-content">
-					<span>Hier steht ein toller Beispielsatz.</span>
-					Hier geht's zur nächsten Seite
+					<h2>Hier steht ein toller Beispielsatz.</h2>
+					<p>Hier geht's zur nächsten Seite</p>
 				</a>
 			</div>
-		</main>
-		<script type="text/javascript" src="scripts/site.min.js"></script>
-	</body>
+
+		</div>
+
+	</main>
+	<!--Main content End-->
+
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+	 crossorigin="anonymous"></script>
+	<!--JSS file link-->
+	<script type="text/javascript" src="scripts/index.js"></script>
+
+</body>
+
 </html>
