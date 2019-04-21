@@ -138,3 +138,39 @@ p {
 }
 
 /* Main Content Ends Here */
+
+/* Container with media query strats here*/
+
+
+/* Applies when the sceen size less then 786px */
+@media (max-width: 800px) {
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+/* Applies when the sceen size less then 992px*/
+@media screen and (min-width : 799px) and (max-width : 1023px) {
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: auto;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+/* Applies when the sceen size less then 1200px*/
+@media (min-width: 1024px) {
+    .container {
+        padding: 10px 80px 20px 80px;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: auto;
+        width: auto;
+    }
+}
+
+/* Container with media query Ends here*/
