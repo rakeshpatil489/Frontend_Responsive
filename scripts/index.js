@@ -17,3 +17,11 @@ hamburgerCloseBtn.addEventListener('click',function(){
     menu.style.right='-100%';
     
 })
+
+/* for resizing on all the screens*/
+var $item = $('body'); 
+var $wHeight = $(window).height();
+$(window).on('resize', function (){
+   $wHeight = $(window).height();
+   $item.height($wHeight);
+ });
