@@ -30,8 +30,6 @@ body {
 }
 
 .logo {
-    height: auto;
-    width: 200px;
     line-height: 100px;
     float: left;
 }
