@@ -25,7 +25,7 @@ body {
     margin-top: -5px;
     margin-bottom: -3px;
     height: 105px;
-    padding: 0px 10px;
+    padding: 5px 10px;
     color: #fff;
 }
 
@@ -91,6 +91,11 @@ p {
     display: block;
 }
 
+.container {
+    padding: 0px 85px;
+}
+
+
 /* Main Content Starts Here */
 
 .BannerDiv {
@@ -102,16 +107,17 @@ p {
 .BannerImage {
     position: relative;
     max-width: 100%;
+    width: 100%;
     height: auto;
-    margin: 0 auto -14%;
+    margin: 0 auto -13%;
     z-index: -1;
 }
 
 .Banner .cardContent {
-    left: 54%;
+    left: auto;
     right: 12%;
     color: #ffffff;
-    padding: 20px 15px;
+    padding: 15px 15px;
     max-width: 430px;
     height: auto;
     background-color: #428fc2;
@@ -131,48 +137,11 @@ p {
 }
 
 /* Main Content Ends Here */
+    
 
-/* Container with media query strats here*/
+/* Media query from 799px to 1220px*/
 
-/* Applies when the sceen size less then 786px */
-
-@media (max-width: 800px) {
-    .container {
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-bottom: auto;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
-/* Applies when the sceen size less then 992px*/
-
-@media screen and (min-width: 799px) and (max-width: 1023px) {
-    .container {
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-bottom: auto;
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-}
-
-/* Applies when the sceen size less then 1200px*/
-
-@media (min-width: 1024px) {
-    .container {
-        padding: 10px 80px 20px 80px;
-        margin-bottom: auto;
-        margin-right: auto;
-        margin-left: auto;
-        width: auto;
-    }
-}
-
-/* Container with media query Ends here*/
-
-@media screen and (min-width: 799px) and (max-width: 1023px) {
+@media screen and (min-width: 799px) and (max-width: 1220px) {
     .Banner .cardContent {
         left: 56%;
         right: 12%;
@@ -196,11 +165,15 @@ p {
         overflow: hidden;
     }
     .BannerImage {
+        width: 100%;
         position: relative;
         max-width: 100%;
         height: auto;
-        margin: 0 auto -14%;
+        margin: 0 auto -13%;
         z-index: 0;
+    }
+    .container{
+        padding: 0 55px;
     }
     h2 {
         font-weight: 200;
@@ -216,7 +189,7 @@ p {
     }
 }
 
-/* Display on mobile view */
+/* Display on mobile view that is below 800px */
 
 @media (max-width:800px) {
     .hamburgerBtnShow, .hamburgerBtnClose {
@@ -232,8 +205,7 @@ p {
         text-align: left;
         padding: 80px 0px;
         line-height: normal;
-        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        /* Animation on opening and closing sidenav*/
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);  /* Animation on opening and closing sidenav*/
         z-index: 4;
     }
     .menu a {
@@ -259,8 +231,8 @@ p {
         bottom: auto;
         left: 2px;
         right: 2px;
-        padding: 10px 2px;
-        margin: 0px 20px;
+        padding: 10px 5px;
+        margin: 0px 15px;
         max-width: 100%;
         height: auto;
         border-radius: none;
@@ -270,6 +242,9 @@ p {
         z-index: 2;
         position: none;
         transform: none;
+    }
+    .container {
+        padding: 5px 0px;
     }
     .cardContent a {
         text-decoration: none;
@@ -281,9 +256,26 @@ p {
         position: relative;
         overflow: hidden;
     }
+    h2 {
+        font-weight: 200;
+        font-size: 24px;
+        padding: 8px 4px;
+        letter-spacing: 0.5px;
+    }
+    p {
+        font-weight: 100;
+        font-size: 16px;
+        padding: 8px 4px;
+        letter-spacing: 0.5px;
+    }
+    .logo {
+        height: auto;
+        width: 180px;
+        line-height: 110px;
+        float: left;
+    }
     .fa-bars:before {
-        color: black;
-        /* Hamburger Icon color black */
+        color: black; /* Hamburger Icon color black */
         margin: 0px 0px 50px 0px;
         z-index: 100;
     }
